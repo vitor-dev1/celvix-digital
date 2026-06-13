@@ -42,7 +42,7 @@ Any static host works (GitHub Pages, Netlify, Vercel). For GitHub Pages, enable 
 
 ## Images
 
-Hero, testimonial avatars, and team photos are generated on the fly via the free [Pollinations.ai](https://pollinations.ai) image API (no key required).
+Hero, testimonial avatars, and team photos are real photography served from the [Pexels](https://pexels.com) CDN, hardcoded as static `<img>` URLs (no runtime API calls or keys in the page).
 
 ---
 
