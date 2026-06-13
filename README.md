@@ -1,15 +1,15 @@
-# Celvix Digital
+# Celvix Partners
 
 > We grow real estate agents into market leaders.
 
-A premium static marketing site for **Celvix Digital**, a real-estate Social Media Marketing Agency (SMMA). We partner with agents on a commission basis — **0.5% per closed sale, negotiated individually** — so we only win when the agent wins.
+A premium static marketing site for **Celvix Partners**, a real-estate Social Media Marketing Agency (SMMA). We partner with agents on a commission basis — **0.5% per closed sale, negotiated individually** — so we only win when the agent wins.
 
 ## Stack
 
 Pure static site — no build step, no dependencies.
 
 - **HTML5** — semantic, multi-page
-- **CSS** — custom design system (dark theme, `#1A6BFF`, Sora + Inter)
+- **CSS** — custom design system (warm dark theme, gold `#C9A96E`, Playfair Display + Sora + Inter)
 - **Vanilla JS** — custom cursor, IntersectionObserver scroll reveals, animated counters, marquee, mobile menu, glassmorphism nav
 
 ## Structure
@@ -46,4 +46,4 @@ Hero, testimonial avatars, and team photos are real photography served from the 
 
 ---
 
-© Celvix Digital. Managed by **VREH DIGITAL LLC**.
+© Celvix Partners. Managed by **VREH DIGITAL LLC**.
