@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Celvix Digital</title>
+  <meta name="description" content="Tell us about your market and portfolio. If we're a fit, we'll build the strategy that gets your properties sold. Commission-based partnership — 0.5% per closed sale." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="brand"><span class="dot"></span>Celvix Digital</a>
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <a href="contact.html" class="btn btn-primary nav-cta">Become a partner</a>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="mobile-menu">
+    <a href="../index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="accent">Become a partner →</a>
+  </div>
+
+  <!-- CONTACT -->
+  <section class="page-hero" style="padding-bottom:30px;">
+    <div class="container">
+      <span class="eyebrow reveal">Contact</span>
+      <h1 class="reveal" data-delay="1">Let's get your<br/>listings <span class="accent">sold</span>.</h1>
+    </div>
+  </section>
+
+  <section class="block" style="padding-top:20px;">
+    <div class="container contact-grid">
+      <aside class="contact-aside reveal">
+        <h2>Become a partner.</h2>
+        <p>Tell us where you operate and what you're working with. We review every application personally and only take on agents we know we can grow. No fixed pricing — we work on commission, 0.5% per closed sale, negotiated individually.</p>
+        <ul class="contact-points">
+          <li><span class="ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg></span> partners@celvixdigital.com</li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.6a2 2 0 01-.5 2.1L8 9.6a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.4c.8.3 1.7.5 2.6.6a2 2 0 011.7 2z"/></svg></span> Mon–Fri, 9am–6pm</li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></span> Serving 12 markets &amp; growing</li>
+        </ul>
+      </aside>
+
+      <form class="form reveal" data-delay="1" id="lead-form">
+        <div class="field">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Jane Doe" required />
+        </div>
+        <div class="field row">
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="jane@email.com" required />
+          </div>
+          <div>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" required />
+          </div>
+        </div>
+        <div class="field">
+          <label for="market">City / Market (where you operate)</label>
+          <input type="text" id="market" name="market" placeholder="Miami, FL" required />
+        </div>
+        <div class="field row">
+          <div>
+            <label for="listings">Number of active listings</label>
+            <input type="number" id="listings" name="listings" min="0" placeholder="e.g. 8" required />
+          </div>
+          <div>
+            <label for="volume">Monthly property volume</label>
+            <select id="volume" name="volume" required>
+              <option value="" disabled selected>Select range</option>
+              <option value="1-3">1–3</option>
+              <option value="4-10">4–10</option>
+              <option value="10-20">10–20</option>
+              <option value="20+">20+</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="challenge">Main challenge</label>
+          <select id="challenge" name="challenge" required>
+            <option value="" disabled selected>Select your biggest challenge</option>
+            <option value="lead-generation">Lead generation</option>
+            <option value="content">Content</option>
+            <option value="positioning">Positioning</option>
+            <option value="all">All of the above</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="portfolio">Tell us about your portfolio</label>
+          <textarea id="portfolio" name="portfolio" placeholder="Property types, price ranges, your goals for the next 12 months..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send application
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+        <div class="form-success">Thanks — your application is in. Our team will review it and reach out within 2 business days.</div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="../index.html" class="brand"><span class="dot"></span>Celvix Digital</a>
+          <p class="note">We grow real estate agents into market leaders — through sales strategy, lead generation, positioning, and daily content management.</p>
+        </div>
+        <div>
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Partnership</a></li>
+            <li><a href="services.html">Commission Model</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-commission">
+        <div class="ic" style="width:42px;height:42px;border-radius:12px;background:var(--blue-soft);color:var(--blue);display:grid;place-items:center;flex:none;">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+        </div>
+        <p style="margin:0;">We partner with real estate agents on a commission basis. <strong>0.5% per closed sale — negotiated individually.</strong> We win when you win.</p>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Celvix Digital. All rights reserved.</span>
+        <span>Managed by <a href="#">VREH DIGITAL LLC</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
