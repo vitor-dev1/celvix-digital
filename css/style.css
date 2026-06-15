@@ -278,6 +278,12 @@ h1, h2, .about-claim, .svc-name { font-family: var(--font-serif); letter-spacing
 .footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 40px; }
 .footer .brand { margin-bottom: 16px; }
 .footer p.note { color: var(--muted); max-width: 360px; font-size: .95rem; }
+.footer-info { margin-top: 26px; }
+.footer-info-label { font-size: .72rem; letter-spacing: .2em; text-transform: uppercase; color: var(--muted-2); display: flex; align-items: center; gap: 9px; margin-bottom: 10px; }
+.footer-info-label::before { content: ""; width: 9px; height: 9px; border-radius: 50%; border: 1.5px solid var(--gold); flex: none; display: inline-block; }
+.footer-info-body { color: var(--muted); font-size: .92rem; font-style: normal; line-height: 1.7; max-width: 360px; }
+.footer-info-body a { color: var(--muted); transition: color .25s; }
+.footer-info-body a:hover { color: var(--gold); }
 .footer h4 { font-size: .8rem; letter-spacing: .18em; text-transform: uppercase; color: var(--muted-2); margin-bottom: 16px; }
 .footer ul li { margin-bottom: 10px; }
 .footer ul a { color: var(--muted); transition: color .25s; }
