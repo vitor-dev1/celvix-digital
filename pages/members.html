@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Members Hub — Celvix Partners</title>
+  <meta name="description" content="The private Celvix Partners members hub — strategy calls, resources, and community for partnered real estate agents." />
+  <meta name="robots" content="noindex, nofollow" />
+  <!-- Instant route gate: redirect before paint if not signed in -->
+  <script>
+    if (sessionStorage.getItem('celvix_member') !== 'true') {
+      window.location.replace('login.html');
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/members.css" />
+</head>
+<body class="members" data-protected>
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- Aurora gold glow + grid background -->
+  <div class="aurora-bg" aria-hidden="true"></div>
+
+  <!-- A) STICKY TOP BAR -->
+  <header class="member-bar" id="top">
+    <div class="member-bar-inner">
+      <a href="members.html" class="brand"><span class="dot"></span>Celvix Partners</a>
+      <nav class="member-pills">
+        <a href="#dashboard" class="active">Dashboard</a>
+        <a href="#resources">Resources</a>
+        <a href="#calls">1-on-1 Calls</a>
+        <a href="#community">Community</a>
+      </nav>
+      <a href="#" class="btn btn-ghost member-signout" data-signout>Sign Out</a>
+      <button class="member-burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- MOBILE MEMBER MENU -->
+  <div class="member-menu">
+    <a href="#dashboard">Dashboard</a>
+    <a href="#resources">Resources</a>
+    <a href="#calls">1-on-1 Calls</a>
+    <a href="#community">Community</a>
+    <button type="button" class="accent" data-signout>Sign Out</button>
+  </div>
+
+  <main class="member-main">
+
+    <!-- B) WELCOME PANEL -->
+    <section class="member-section welcome" id="dashboard">
+      <div class="container">
+        <span class="eyebrow section-eyebrow reveal">Private Members Hub</span>
+        <h1 class="reveal" data-delay="1">Welcome back, <span class="accent" data-member-name>Partner</span></h1>
+        <p class="welcome-sub reveal" data-delay="2">You're inside the private Celvix Partners growth community — built exclusively for partnered real estate professionals. Everything you need to position sharper, generate qualified leads, and close more properties lives here.</p>
+        <div class="member-chips reveal" data-delay="3">
+          <span class="chip"><span class="chip-dot"></span>Member since&nbsp;<b>2026</b></span>
+          <span class="chip"><span class="chip-dot"></span>Tier:&nbsp;<b>Partner</b></span>
+          <span class="chip"><span class="chip-dot"></span>Status:&nbsp;<b>Active</b></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- C) PRIMARY CTA — 1-ON-1 DISCORD CALL -->
+    <section class="member-section" id="calls">
+      <div class="container">
+        <div class="call-card reveal">
+          <div class="call-content">
+            <span class="eyebrow call-eyebrow">Your priority benefit</span>
+            <h2>Your 1-on-1 Strategy Calls</h2>
+            <p class="call-copy">Every partnered agent receives scheduled individual consulting calls held on Discord. We review your live listings, active campaigns, lead flow, and the exact next moves — together, one-on-one, with the team that's invested in your closings.</p>
+            <p class="call-note">Calls are booked directly in our Discord.</p>
+          </div>
+          <div class="call-aside">
+            <div class="call-icon" aria-hidden="true">&#9673;</div>
+            <!-- TODO: replace placeholder invite with the real Celvix Discord invite link -->
+            <a href="https://discord.gg/your-invite-here" target="_blank" rel="noopener" class="btn btn-primary">
+              Join the Discord
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- D) RESOURCE LIBRARY -->
+    <section class="member-section" id="resources">
+      <div class="container">
+        <div class="block-head reveal" style="margin-bottom:40px;">
+          <span class="eyebrow">The library</span>
+          <h2 class="section-title">Resources built to move listings.</h2>
+          <p class="section-lead">Frameworks, scripts, and market intelligence — the same playbook we run with every partner.</p>
+        </div>
+
+        <div class="resource-grid">
+          <a class="resource-card reveal" href="#">
+            <div class="resource-icon" aria-hidden="true">&#128202;</div>
+            <h3>Market Reports</h3>
+            <p>Monthly local market data, pricing trends, and inventory analysis to sharpen how you position every listing.</p>
+            <span class="resource-link">Open <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+
+          <a class="resource-card reveal" data-delay="1" href="#">
+            <div class="resource-icon" aria-hidden="true">&#127919;</div>
+            <h3>Lead Generation Playbook</h3>
+            <p>Our proven framework for generating qualified buyer and seller leads through paid and organic campaigns.</p>
+            <span class="resource-link">Open <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+
+          <a class="resource-card reveal" data-delay="2" href="#">
+            <div class="resource-icon" aria-hidden="true">&#127909;</div>
+            <h3>Content Engine Templates</h3>
+            <p>Ready-to-use scripts and frameworks for property tours, market updates, and lifestyle content that converts.</p>
+            <span class="resource-link">Open <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+
+          <a class="resource-card reveal" href="#">
+            <div class="resource-icon" aria-hidden="true">&#127968;</div>
+            <h3>Listing Optimization Guide</h3>
+            <p>How to write, photograph, price, and present listings that turn browsers into booked viewings.</p>
+            <span class="resource-link">Open <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+
+          <a class="resource-card reveal" data-delay="1" href="#">
+            <div class="resource-icon" aria-hidden="true">&#128172;</div>
+            <h3>Objection Handling Scripts</h3>
+            <p>Field-tested responses to the most common buyer and seller objections.</p>
+            <span class="resource-link">Open <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+
+          <a class="resource-card reveal" data-delay="2" href="#">
+            <div class="resource-icon" aria-hidden="true">&#11088;</div>
+            <h3>Agent Authority Kit</h3>
+            <p>Positioning frameworks and brand assets to make you the obvious choice in your market.</p>
+            <span class="resource-link">Open <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- E) ANNOUNCEMENTS / COMMUNITY FEED -->
+    <section class="member-section" id="community">
+      <div class="container">
+        <div class="block-head reveal" style="margin-bottom:34px;">
+          <span class="eyebrow">Community</span>
+          <h2 class="section-title">Latest from Celvix</h2>
+        </div>
+
+        <div class="feed">
+          <article class="feed-item reveal">
+            <span class="feed-date">June 2026</span>
+            <div class="feed-body">
+              <h3>June Market Report is live</h3>
+              <p>Fresh local pricing trends and inventory shifts are in the library — review it before your next listing presentation.</p>
+            </div>
+          </article>
+
+          <article class="feed-item reveal" data-delay="1">
+            <span class="feed-date">June 2026</span>
+            <div class="feed-body">
+              <h3>Group strategy session — Thursday</h3>
+              <p>Join us in Discord for a live walkthrough of Q3 lead-gen campaigns and the seasonal content calendar.</p>
+            </div>
+          </article>
+
+          <article class="feed-item reveal" data-delay="2">
+            <span class="feed-date">May 2026</span>
+            <div class="feed-body">
+              <h3>New content template pack added</h3>
+              <p>Twelve new short-form scripts for luxury tours and market updates are now in the Content Engine library.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- F) WHOP / PAYMENTS NOTICE -->
+    <section class="member-section" id="payments">
+      <div class="container">
+        <div class="whop-strip reveal">
+          <div class="ic" aria-hidden="true">&#128274;</div>
+          <div>
+            <b>We manage payments via Whop.</b>
+            <div class="whop-sub">Your partnership billing and membership are handled securely through Whop.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- G) MEMBER FOOTER -->
+  <footer class="member-footer">
+    <div class="container">
+      <a href="members.html" class="logo">CELVIX<span>•</span>PARTNERS</a>
+      <span class="mf-meta">Managed by VREH DIGITAL LLC · United States</span>
+      <span class="mf-whop"><span class="lock">&#128274;</span> Payments managed via Whop.</span>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/auth.js"></script>
+  <script>
+    /* ---------- Members hub: bar scroll state, mobile menu, active pill ---------- */
+    (function () {
+      'use strict';
+      var bar = document.querySelector('.member-bar');
+      if (bar) {
+        var onScroll = function () { bar.classList.toggle('scrolled', window.scrollY > 24); };
+        onScroll();
+        window.addEventListener('scroll', onScroll, { passive: true });
+      }
+
+      /* Mobile menu */
+      var burger = document.querySelector('.member-burger');
+      var menu = document.querySelector('.member-menu');
+      if (burger && menu) {
+        var toggle = function (force) {
+          var open = force !== undefined ? force : !menu.classList.contains('open');
+          menu.classList.toggle('open', open);
+          burger.classList.toggle('open', open);
+          document.body.style.overflow = open ? 'hidden' : '';
+        };
+        burger.addEventListener('click', function () { toggle(); });
+        menu.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { toggle(false); }); });
+      }
+
+      /* Active pill via scroll spy */
+      var pills = Array.prototype.slice.call(document.querySelectorAll('.member-pills a'));
+      var sections = pills
+        .map(function (a) { return document.querySelector(a.getAttribute('href')); })
+        .filter(Boolean);
+      if ('IntersectionObserver' in window && sections.length) {
+        var spy = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              var id = '#' + entry.target.id;
+              pills.forEach(function (p) { p.classList.toggle('active', p.getAttribute('href') === id); });
+            }
+          });
+        }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+        sections.forEach(function (s) { spy.observe(s); });
+      }
+    })();
+  </script>
+</body>
+</html>

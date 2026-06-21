@@ -141,6 +141,9 @@ h1, h2, .about-claim, .svc-name { font-family: var(--font-serif); letter-spacing
 .nav-links a { padding: 9px 14px; border-radius: 999px; font-size: .92rem; color: var(--muted); transition: color .25s, background .25s; }
 .nav-links a:hover, .nav-links a.active { color: var(--text); background: rgba(201,169,110,.07); }
 .nav-cta { margin-left: 8px; padding: 11px 20px; font-size: .9rem; }
+/* Member Login — portal entrance pill (gold outline, distinct from text links) */
+.nav-login { border: 1px solid var(--line-strong) !important; color: var(--gold-soft) !important; }
+.nav-login:hover { border-color: var(--gold) !important; color: var(--gold) !important; background: var(--gold-tint) !important; }
 .hamburger { display: none; width: 44px; height: 44px; border: 1px solid var(--line); border-radius: 12px; background: transparent; cursor: none; position: relative; }
 .hamburger span { position: absolute; left: 11px; right: 11px; height: 2px; background: var(--text); transition: transform .3s var(--ease), opacity .2s; }
 .hamburger span:nth-child(1){ top: 15px; } .hamburger span:nth-child(2){ top: 21px; } .hamburger span:nth-child(3){ top: 27px; }
