@@ -20,6 +20,12 @@
   var KEY_AUTH = 'celvix_member';
   var KEY_NAME = 'celvix_name';
 
+  /* Login page path is resolved per-page via <body data-login="...">,
+     so pages nested deeper (e.g. /pages/resources/) can point back correctly. */
+  function loginPath() {
+    return (document.body && document.body.getAttribute('data-login')) || 'login.html';
+  }
+
   /* ---------- Public helpers ---------- */
   var Auth = {
     isAuthed: function () {
@@ -31,7 +37,7 @@
     signOut: function () {
       sessionStorage.removeItem(KEY_AUTH);
       sessionStorage.removeItem(KEY_NAME);
-      window.location.href = 'login.html';
+      window.location.href = loginPath();
     },
     /* Returns the matched member object or null */
     validate: function (email, password) {
@@ -53,7 +59,7 @@
   /* ---------- Route gate (used by members.html) ---------- */
   // Pages opt in by adding <body data-protected> — runs before paint where possible.
   if (document.body && document.body.hasAttribute('data-protected') && !Auth.isAuthed()) {
-    window.location.replace('login.html');
+    window.location.replace(loginPath());
     return;
   }
 
