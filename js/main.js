@@ -116,6 +116,43 @@
     });
   }
 
+  /* ---------- FAQ accordion (accessible, single-open) ---------- */
+  const faqItems = Array.prototype.slice.call(document.querySelectorAll('.faq-item'));
+  if (faqItems.length) {
+    const closeItem = (item) => {
+      const btn = item.querySelector('.faq-q');
+      const panel = item.querySelector('.faq-a');
+      item.classList.remove('open');
+      if (btn) btn.setAttribute('aria-expanded', 'false');
+      if (panel) panel.style.maxHeight = null;
+    };
+    faqItems.forEach((item) => {
+      const btn = item.querySelector('.faq-q');
+      const panel = item.querySelector('.faq-a');
+      if (!btn || !panel) return;
+      btn.addEventListener('click', () => {
+        const willOpen = !item.classList.contains('open');
+        faqItems.forEach((o) => { if (o !== item) closeItem(o); });
+        if (willOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+          panel.style.maxHeight = panel.scrollHeight + 'px';
+        } else {
+          closeItem(item);
+        }
+      });
+    });
+    /* Keep an open panel correctly sized on resize */
+    let raf;
+    window.addEventListener('resize', () => {
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => {
+        const open = document.querySelector('.faq-item.open .faq-a');
+        if (open) open.style.maxHeight = open.scrollHeight + 'px';
+      });
+    }, { passive: true });
+  }
+
   /* ---------- Footer year ---------- */
   const y = document.querySelector('#year');
   if (y) y.textContent = new Date().getFullYear();

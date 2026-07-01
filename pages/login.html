@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Member Access — Celvix Partners</title>
-  <meta name="description" content="Sign in to your private Celvix Partners dashboard — the members area for partnered real estate agents." />
+  <meta name="description" content="Sign in to your private Celvix Partners client workspace — the members area for partnered real estate agents." />
   <meta name="robots" content="noindex, nofollow" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,55 +12,103 @@
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/members.css" />
 </head>
-<body>
+<body class="login-page">
   <div class="cursor-dot"></div>
   <div class="cursor-ring"></div>
 
-  <!-- Aurora gold glow + grid background -->
-  <div class="aurora-bg" aria-hidden="true"></div>
+  <main class="login-split">
 
-  <main class="login-wrap">
-    <div class="login-card reveal">
-      <div class="login-brand">CELVIX<span class="dot">•</span>PARTNERS</div>
+    <!-- LEFT — brand / context -->
+    <section class="login-brandside">
+      <a href="../index.html" class="login-wordmark">CELVIX<span class="dot">&bull;</span>PARTNERS</a>
 
-      <div class="login-head">
-        <h1>Member Access</h1>
-        <p>Sign in to your private Celvix Partners dashboard.</p>
-      </div>
+      <div class="login-brand-body">
+        <h1 class="login-brand-title">The Celvix Partners <span class="accent">client workspace.</span></h1>
+        <p class="login-brand-sub">Where your growth lives — onboarding, resources, your strategy calls, and a direct line to your team. Private to active Celvix Partners members.</p>
 
-      <form id="login-form" novalidate>
-        <div class="login-error" role="alert">Invalid credentials. Please try again.</div>
-
-        <div class="login-field">
-          <label for="login-email">Email</label>
-          <input type="email" id="login-email" name="email" autocomplete="username" placeholder="you@email.com" required />
-        </div>
-
-        <div class="login-field">
-          <label for="login-password">Password</label>
-          <div class="login-input-wrap">
-            <input type="password" id="login-password" name="password" autocomplete="current-password" placeholder="••••••••" required />
-            <button type="button" class="pw-toggle" aria-label="Show password">
-              <svg class="eye-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg>
-              <svg class="eye-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0112 20c-7 0-11-8-11-8a18.45 18.45 0 015.06-5.94M9.9 4.24A9.12 9.12 0 0112 4c7 0 11 8 11 8a18.5 18.5 0 01-2.16 3.19M1 1l22 22"/><path d="M9.88 9.88a3 3 0 104.24 4.24"/></svg>
-            </button>
+        <div class="login-features-wrap">
+          <span class="login-mini-label">Inside your workspace</span>
+          <div class="login-features">
+            <div class="login-feature"><span class="fic" aria-hidden="true">&#9678;</span><span class="ft">Engagement status</span></div>
+            <div class="login-feature"><span class="fic" aria-hidden="true">&#128218;</span><span class="ft">Private resources</span></div>
+            <div class="login-feature"><span class="fic" aria-hidden="true">&#128202;</span><span class="ft">Reporting</span></div>
+            <div class="login-feature"><span class="fic" aria-hidden="true">&#9993;</span><span class="ft">Direct support</span></div>
           </div>
         </div>
+      </div>
 
-        <button type="submit" class="btn btn-primary login-submit">
-          <span class="label">Sign In</span>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          <span class="spinner" aria-hidden="true"></span>
-        </button>
-
-        <div class="login-trust">
-          <span class="lock">&#128274;</span>
-          <span>Payments are managed via Whop.</span>
+      <div class="login-support">
+        <span class="login-mini-label">Need help?</span>
+        <div class="login-support-links">
+          <a href="mailto:info@celvixpartners.com" class="login-support-link"><span class="sic" aria-hidden="true">&#9993;</span>info@celvixpartners.com</a>
+          <a href="tel:+12027734683" class="login-support-link"><span class="sic" aria-hidden="true">&#9742;</span>+1 (202) 773-4683</a>
         </div>
-      </form>
+      </div>
+    </section>
 
-      <a href="../index.html" class="login-back">&larr; Back to site</a>
-    </div>
+    <!-- RIGHT — sign in -->
+    <section class="login-formside">
+      <!-- Compact brand header — shown on mobile only -->
+      <div class="login-mobilehead">
+        <a href="../index.html" class="login-wordmark">CELVIX<span class="dot">&bull;</span>PARTNERS</a>
+        <p class="login-mobilehead-sub">Your private client workspace — onboarding, resources, and a direct line to your team.</p>
+        <div class="login-support-links">
+          <a href="mailto:info@celvixpartners.com" class="login-support-link"><span class="sic" aria-hidden="true">&#9993;</span>info@celvixpartners.com</a>
+          <a href="tel:+12027734683" class="login-support-link"><span class="sic" aria-hidden="true">&#9742;</span>+1 (202) 773-4683</a>
+        </div>
+      </div>
+
+      <div class="login-card login-panelcard reveal">
+        <span class="login-mini-label">Client Portal</span>
+        <div class="login-head">
+          <h1>Sign in.</h1>
+          <p>Sign in to your private Celvix Partners workspace.</p>
+        </div>
+
+        <form id="login-form" novalidate>
+          <div class="login-error" role="alert">Invalid credentials. Please try again.</div>
+
+          <div class="login-field">
+            <label for="login-email">Email</label>
+            <input type="email" id="login-email" name="email" autocomplete="username" placeholder="you@email.com" required />
+          </div>
+
+          <div class="login-field">
+            <div class="login-labelrow">
+              <label for="login-password">Password</label>
+              <a href="contact.html" class="login-need">Need access?</a>
+            </div>
+            <div class="login-input-wrap">
+              <input type="password" id="login-password" name="password" autocomplete="current-password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" required />
+              <button type="button" class="pw-toggle" aria-label="Show password">
+                <svg class="eye-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg>
+                <svg class="eye-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0112 20c-7 0-11-8-11-8a18.45 18.45 0 015.06-5.94M9.9 4.24A9.12 9.12 0 0112 4c7 0 11 8 11 8a18.5 18.5 0 01-2.16 3.19M1 1l22 22"/><path d="M9.88 9.88a3 3 0 104.24 4.24"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <label class="login-check">
+            <input type="checkbox" id="login-remember" name="remember" />
+            <span class="box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+            <span class="ck-label">Keep me signed in</span>
+          </label>
+
+          <button type="submit" class="btn btn-primary login-submit">
+            <span class="label">Sign in</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            <span class="spinner" aria-hidden="true"></span>
+          </button>
+
+          <div class="login-trust">
+            <span class="lock" aria-hidden="true">&#128274;</span>
+            <span>Secure access &middot; Payments managed via Whop.</span>
+          </div>
+        </form>
+
+        <a href="../index.html" class="login-back">&larr; Back to website</a>
+      </div>
+    </section>
+
   </main>
 
   <script src="../js/main.js"></script>
