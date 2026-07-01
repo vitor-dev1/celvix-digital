@@ -19,6 +19,7 @@
 
   var KEY_AUTH = 'celvix_member';
   var KEY_NAME = 'celvix_name';
+  var KEY_EMAIL = 'celvix_email';
 
   /* Login page path is resolved per-page via <body data-login="...">,
      so pages nested deeper (e.g. /pages/resources/) can point back correctly. */
@@ -34,9 +35,13 @@
     name: function () {
       return sessionStorage.getItem(KEY_NAME) || 'Partner';
     },
+    email: function () {
+      return sessionStorage.getItem(KEY_EMAIL) || '';
+    },
     signOut: function () {
       sessionStorage.removeItem(KEY_AUTH);
       sessionStorage.removeItem(KEY_NAME);
+      sessionStorage.removeItem(KEY_EMAIL);
       window.location.href = loginPath();
     },
     /* Returns the matched member object or null */
@@ -53,6 +58,7 @@
     grant: function (member) {
       sessionStorage.setItem(KEY_AUTH, 'true');
       sessionStorage.setItem(KEY_NAME, member.name);
+      sessionStorage.setItem(KEY_EMAIL, member.email);
     }
   };
 
@@ -131,10 +137,13 @@
     });
   });
 
-  /* ---------- Personalize any [data-member-name] targets ---------- */
+  /* ---------- Personalize any [data-member-name] / [data-member-email] targets ---------- */
   if (Auth.isAuthed()) {
     document.querySelectorAll('[data-member-name]').forEach(function (el) {
       el.textContent = Auth.name();
+    });
+    document.querySelectorAll('[data-member-email]').forEach(function (el) {
+      el.textContent = Auth.email() || 'your account';
     });
   }
 

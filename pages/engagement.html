@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Engagement Overview — Celvix Partners</title>
+  <meta name="description" content="Live status of your Celvix Partners engagement — scope, current phase, deliverables, and what we need from you." />
+  <meta name="robots" content="noindex, nofollow" />
+  <!-- Instant route gate: redirect before paint if not signed in -->
+  <script>
+    if (sessionStorage.getItem('celvix_member') !== 'true') { window.location.replace('login.html'); }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/members.css" />
+</head>
+<body class="members" data-protected data-login="login.html">
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <div class="aurora-bg" aria-hidden="true"></div>
+
+  <!-- STICKY WORKSPACE TOP-NAV -->
+  <header class="member-bar" id="top">
+    <div class="member-bar-inner">
+      <a href="members.html" class="brand"><span class="dot"></span>Celvix Partners</a>
+      <nav class="member-pills">
+        <a href="members.html#dashboard">Dashboard</a>
+        <a href="members.html#start">Onboarding</a>
+        <a href="engagement.html" class="active">Engagement</a>
+        <a href="members.html#resources">Resources</a>
+        <a href="account.html#support">Support</a>
+        <a href="account.html">Account</a>
+      </nav>
+      <a href="#" class="btn btn-ghost member-signout" data-signout>Sign out</a>
+      <button class="member-burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="member-menu">
+    <a href="members.html#dashboard">Dashboard</a>
+    <a href="members.html#start">Onboarding</a>
+    <a href="engagement.html" class="accent">Engagement</a>
+    <a href="members.html#resources">Resources</a>
+    <a href="account.html#support">Support</a>
+    <a href="account.html">Account</a>
+    <button type="button" class="accent" data-signout>Sign out</button>
+  </div>
+
+  <main class="member-main">
+
+    <!-- HERO -->
+    <section class="member-section ws-hero" id="engagement">
+      <div class="container">
+        <a href="members.html" class="back-hub reveal">&larr; Back to dashboard</a>
+        <span class="eyebrow section-eyebrow reveal" style="margin-top:18px;">Your engagement</span>
+        <h1 class="reveal" data-delay="1">Engagement <span class="accent">overview.</span></h1>
+        <p class="ws-sub reveal" data-delay="2">Live status of your scope, what we're building now, what we need from you, and what's next.</p>
+      </div>
+    </section>
+
+    <!-- SUMMARY + CURRENT PHASE -->
+    <section class="member-section" id="summary">
+      <div class="container">
+        <div class="eng-grid">
+          <!-- Engagement summary -->
+          <div class="info-card reveal">
+            <span class="eyebrow">Engagement summary</span>
+            <div class="info-rows">
+              <div class="info-row"><span class="k">Engagement</span><span class="v">Growth Engagement</span></div>
+              <div class="info-row"><span class="k">Service</span><span class="v">Strategy &amp; Implementation</span></div>
+              <div class="info-row"><span class="k">Started</span><span class="v">June 2026</span></div>
+              <div class="info-row"><span class="k">Strategist</span><span class="v">Assigned at kickoff</span></div>
+              <div class="info-row"><span class="k">Cadence</span><span class="v">Bi-weekly working review</span></div>
+            </div>
+          </div>
+
+          <!-- Current phase & status -->
+          <div class="info-card reveal" data-delay="1">
+            <span class="eyebrow">Current phase &amp; status</span>
+            <div class="phase-track">
+              <div class="phase-item complete">
+                <div class="phase-rail"><span class="pt"></span><span class="pline"></span></div>
+                <div class="phase-body">
+                  <h4>Discovery <span class="badge badge-complete">Complete</span></h4>
+                  <p>Market, positioning, and channel audit for your listings and agent brand.</p>
+                </div>
+              </div>
+              <div class="phase-item progress">
+                <div class="phase-rail"><span class="pt"></span><span class="pline"></span></div>
+                <div class="phase-body">
+                  <h4>Strategy <span class="badge badge-progress">In Progress</span></h4>
+                  <p>Positioning, messaging, and the growth roadmap for your market.</p>
+                </div>
+              </div>
+              <div class="phase-item upcoming">
+                <div class="phase-rail"><span class="pt"></span><span class="pline"></span></div>
+                <div class="phase-body">
+                  <h4>Infrastructure <span class="badge badge-upcoming">Upcoming</span></h4>
+                  <p>Content system, lead capture, and distribution setup across channels.</p>
+                </div>
+              </div>
+              <div class="phase-item upcoming">
+                <div class="phase-rail"><span class="pt"></span><span class="pline"></span></div>
+                <div class="phase-body">
+                  <h4>Optimization <span class="badge badge-upcoming">Upcoming</span></h4>
+                  <p>Testing, reporting, and scaling what converts into booked viewings.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CURRENT SCOPE -->
+    <section class="member-section" id="scope">
+      <div class="container">
+        <div class="ws-block-head reveal">
+          <span class="eyebrow">Current scope</span>
+          <h2>What your engagement covers.</h2>
+        </div>
+        <div class="chip-row reveal" data-delay="1">
+          <span class="scope-chip">Positioning &amp; messaging</span>
+          <span class="scope-chip">Content infrastructure</span>
+          <span class="scope-chip">Distribution &amp; channel strategy</span>
+          <span class="scope-chip">Reporting &amp; growth reviews</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PENDING INPUTS + NEXT DELIVERABLES -->
+    <section class="member-section" id="inputs">
+      <div class="container">
+        <div class="eng-grid">
+          <!-- Pending inputs -->
+          <div class="info-card reveal">
+            <span class="eyebrow">Pending inputs from you</span>
+            <h3 class="card-title">A few things to unblock us.</h3>
+            <ul class="ws-checklist">
+              <li>
+                <span class="cbox" aria-hidden="true">&#9633;</span>
+                <span><span class="ci-title">Complete your client profile</span><span class="ci-sub">Finish onboarding so we can tailor your positioning and market strategy.</span></span>
+              </li>
+              <li>
+                <span class="cbox" aria-hidden="true">&#9633;</span>
+                <span><span class="ci-title">Grant access to your channels</span><span class="ci-sub">Instagram, TikTok, and any active ad accounts for listing distribution.</span></span>
+              </li>
+              <li>
+                <span class="cbox" aria-hidden="true">&#9633;</span>
+                <span><span class="ci-title">Share your brand assets</span><span class="ci-sub">Logo, headshots, and any existing listing photography or reel footage.</span></span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Next deliverables -->
+          <div class="info-card reveal" data-delay="1">
+            <span class="eyebrow">Next deliverables</span>
+            <h3 class="card-title">What we're shipping next.</h3>
+            <div class="deliverables">
+              <div class="deliverable-row">
+                <div class="d-main">
+                  <div class="d-ico" aria-hidden="true">&#9998;</div>
+                  <div><div class="d-title">Positioning &amp; messaging brief</div><div class="d-sub">How you show up against every other agent in your market.</div></div>
+                </div>
+                <span class="badge badge-progress">In Progress</span>
+              </div>
+              <div class="deliverable-row">
+                <div class="d-main">
+                  <div class="d-ico" aria-hidden="true">&#128506;</div>
+                  <div><div class="d-title">Growth roadmap &amp; channel plan</div><div class="d-sub">Where your leads will come from, and in what order we build.</div></div>
+                </div>
+                <span class="badge badge-scheduled">Scheduled</span>
+              </div>
+              <div class="deliverable-row">
+                <div class="d-main">
+                  <div class="d-ico" aria-hidden="true">&#9881;</div>
+                  <div><div class="d-title">Content system setup</div><div class="d-sub">Templates and cadence for listings, tours, and market updates.</div></div>
+                </div>
+                <span class="badge badge-scheduled">Scheduled</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECENT UPDATES & NOTES -->
+    <section class="member-section" id="updates">
+      <div class="container">
+        <div class="ws-block-head reveal">
+          <span class="eyebrow">Recent updates &amp; notes</span>
+          <h2>The latest from your team.</h2>
+        </div>
+        <div class="timeline reveal" data-delay="1">
+          <div class="tl-item">
+            <span class="tl-date">June 2026</span>
+            <div class="tl-body">
+              <h4>Strategy phase underway</h4>
+              <p>We've moved from discovery into strategy — positioning and your growth roadmap are being drafted now. Expect the first brief on your next working review.</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <span class="tl-date">June 2026</span>
+            <div class="tl-body">
+              <h4>New resource added to your library</h4>
+              <p>The Lead Generation Playbook is now available in your workspace — a head start on the buyer and seller pipeline we'll build together.</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <span class="tl-date">June 2026</span>
+            <div class="tl-body">
+              <h4>Workspace provisioned</h4>
+              <p>Your private Celvix Partners workspace is live. Everything for your engagement — status, resources, and support — now lives in one place.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA STRIP -->
+    <section class="member-section" id="engagement-cta">
+      <div class="container">
+        <div class="cta-strip reveal">
+          <div>
+            <h3>Questions about your engagement or a deliverable?</h3>
+            <p>Your strategist is one message away — reach out any time and we'll get back within 24 hours.</p>
+          </div>
+          <a href="account.html#support" class="btn btn-primary">Contact your team
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="member-footer">
+    <div class="container">
+      <a href="members.html" class="logo">CELVIX<span>•</span>PARTNERS</a>
+      <span class="mf-meta">© 2026 Celvix Partners · Private client workspace — Operated by VREH DIGITAL LLC</span>
+      <span class="mf-whop"><span class="lock">&#128274;</span> Billing via Whop.</span>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/members-ui.js"></script>
+</body>
+</html>

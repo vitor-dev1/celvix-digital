@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support &amp; Account — Celvix Partners</title>
+  <meta name="description" content="A direct line to your Celvix Partners team, plus billing and workspace access details." />
+  <meta name="robots" content="noindex, nofollow" />
+  <!-- Instant route gate: redirect before paint if not signed in -->
+  <script>
+    if (sessionStorage.getItem('celvix_member') !== 'true') { window.location.replace('login.html'); }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/members.css" />
+</head>
+<body class="members" data-protected data-login="login.html">
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <div class="aurora-bg" aria-hidden="true"></div>
+
+  <!-- STICKY WORKSPACE TOP-NAV -->
+  <header class="member-bar" id="top">
+    <div class="member-bar-inner">
+      <a href="members.html" class="brand"><span class="dot"></span>Celvix Partners</a>
+      <nav class="member-pills">
+        <a href="members.html#dashboard">Dashboard</a>
+        <a href="members.html#start">Onboarding</a>
+        <a href="engagement.html">Engagement</a>
+        <a href="members.html#resources">Resources</a>
+        <a href="#support">Support</a>
+        <a href="account.html" class="active">Account</a>
+      </nav>
+      <a href="#" class="btn btn-ghost member-signout" data-signout>Sign out</a>
+      <button class="member-burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="member-menu">
+    <a href="members.html#dashboard">Dashboard</a>
+    <a href="members.html#start">Onboarding</a>
+    <a href="engagement.html">Engagement</a>
+    <a href="members.html#resources">Resources</a>
+    <a href="#support">Support</a>
+    <a href="account.html" class="accent">Account</a>
+    <button type="button" class="accent" data-signout>Sign out</button>
+  </div>
+
+  <main class="member-main">
+
+    <!-- HERO -->
+    <section class="member-section ws-hero" id="account">
+      <div class="container">
+        <a href="members.html" class="back-hub reveal">&larr; Back to dashboard</a>
+        <span class="eyebrow section-eyebrow reveal" style="margin-top:18px;">Support &amp; account</span>
+        <h1 class="reveal" data-delay="1">A direct line to your <span class="accent">team.</span></h1>
+        <p class="ws-sub reveal" data-delay="2">Reach your strategist, arrange a working call, and manage your workspace access — all in one place.</p>
+      </div>
+    </section>
+
+    <!-- SUPPORT -->
+    <section class="member-section" id="support">
+      <div class="container">
+        <div class="acct-grid">
+          <!-- Message your strategist -->
+          <div class="acct-card reveal">
+            <div class="acct-ico" aria-hidden="true">&#9993;</div>
+            <h3>Message your strategist</h3>
+            <p>Questions on a deliverable, your roadmap, or your market? Send us a note and we'll respond within 24 hours.</p>
+            <a class="acct-detail" href="mailto:info@celvixpartners.com"><span class="ad-ico" aria-hidden="true">&#9993;</span>info@celvixpartners.com</a>
+            <div class="acct-actions">
+              <a href="mailto:info@celvixpartners.com" class="btn btn-primary">Request support
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Book a working call -->
+          <div class="acct-card reveal" data-delay="1">
+            <div class="acct-ico" aria-hidden="true">&#128222;</div>
+            <h3>Book a working call</h3>
+            <p>Strategy and review calls are scheduled with your team. Reach out to lock in a time that fits your week.</p>
+            <a class="acct-detail" href="tel:+12027734683"><span class="ad-ico" aria-hidden="true">&#9742;</span>+1 (202) 773-4683</a>
+            <div class="acct-actions">
+              <a href="tel:+12027734683" class="btn btn-ghost">Call your team</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BILLING & ACCESS -->
+    <section class="member-section" id="billing">
+      <div class="container">
+        <div class="ws-block-head reveal">
+          <span class="eyebrow">Billing &amp; access</span>
+          <h2>Your membership &amp; workspace.</h2>
+        </div>
+        <div class="acct-grid">
+          <!-- Billing via Whop -->
+          <div class="acct-card reveal">
+            <div class="acct-ico" aria-hidden="true">&#128179;</div>
+            <h3>Billing is handled securely via Whop.</h3>
+            <p>Your Celvix Partners membership is purchased through Whop, our approved checkout provider. Payments, invoices, and your subscription are all managed there — securely and in one place.</p>
+            <p class="access-note"><span class="lock" aria-hidden="true">&#128274;</span> Manage your plan and payment details in your Whop account.</p>
+          </div>
+
+          <!-- Workspace access -->
+          <div class="acct-card reveal" data-delay="1">
+            <div class="acct-ico" aria-hidden="true">&#128273;</div>
+            <h3>Workspace access</h3>
+            <p>Signed in as <strong data-member-email>your account</strong>. Access is private to you — this workspace is provisioned for your engagement alone.</p>
+            <div class="acct-actions">
+              <button type="button" class="btn btn-ghost" data-signout>Sign out</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="member-footer">
+    <div class="container">
+      <a href="members.html" class="logo">CELVIX<span>•</span>PARTNERS</a>
+      <span class="mf-meta">© 2026 Celvix Partners · Private client workspace — Operated by VREH DIGITAL LLC</span>
+      <span class="mf-whop"><span class="lock">&#128274;</span> Billing via Whop.</span>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/members-ui.js"></script>
+</body>
+</html>

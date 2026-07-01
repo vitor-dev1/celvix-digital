@@ -25,17 +25,19 @@
   <!-- Aurora gold glow + grid background -->
   <div class="aurora-bg" aria-hidden="true"></div>
 
-  <!-- A) STICKY TOP BAR -->
+  <!-- A) STICKY WORKSPACE TOP-NAV -->
   <header class="member-bar" id="top">
     <div class="member-bar-inner">
       <a href="members.html" class="brand"><span class="dot"></span>Celvix Partners</a>
       <nav class="member-pills">
         <a href="#dashboard" class="active">Dashboard</a>
-        <a href="#start">Getting Started</a>
+        <a href="#start">Onboarding</a>
+        <a href="engagement.html">Engagement</a>
         <a href="#resources">Resources</a>
-        <a href="#community">Community</a>
+        <a href="account.html#support">Support</a>
+        <a href="account.html">Account</a>
       </nav>
-      <a href="#" class="btn btn-ghost member-signout" data-signout>Sign Out</a>
+      <a href="#" class="btn btn-ghost member-signout" data-signout>Sign out</a>
       <button class="member-burger" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </header>
@@ -43,24 +45,31 @@
   <!-- MOBILE MEMBER MENU -->
   <div class="member-menu">
     <a href="#dashboard">Dashboard</a>
-    <a href="#start">Getting Started</a>
+    <a href="#start">Onboarding</a>
+    <a href="engagement.html">Engagement</a>
     <a href="#resources">Resources</a>
-    <a href="#community">Community</a>
-    <button type="button" class="accent" data-signout>Sign Out</button>
+    <a href="account.html#support">Support</a>
+    <a href="account.html">Account</a>
+    <button type="button" class="accent" data-signout>Sign out</button>
   </div>
 
   <main class="member-main">
 
-    <!-- B) WELCOME PANEL -->
-    <section class="member-section welcome" id="dashboard">
+    <!-- B) EDITORIAL HERO -->
+    <section class="member-section welcome ws-hero" id="dashboard">
       <div class="container">
-        <span class="eyebrow section-eyebrow reveal">Private Members Hub</span>
+        <span class="eyebrow section-eyebrow reveal">Private Client Workspace</span>
         <h1 class="reveal" data-delay="1">Welcome back, <span class="accent" data-member-name>Partner</span></h1>
-        <p class="welcome-sub reveal" data-delay="2">You're inside the private Celvix Partners growth community — built exclusively for partnered real estate professionals. Everything you need to position sharper, generate qualified leads, and close more properties lives here.</p>
+        <p class="welcome-sub reveal" data-delay="2">Your private Celvix Partners workspace — engagement status, resources, and a direct line to your strategist, in one place.</p>
+
+        <div class="status-pills reveal" data-delay="2">
+          <span class="status-pill"><span class="dot"></span><span class="k">Status</span>&nbsp;<b>Active</b></span>
+          <span class="status-pill"><span class="dot"></span><span class="k">Access</span>&nbsp;<b>Private</b></span>
+          <span class="status-pill"><span class="dot"></span><span class="k">Phase</span>&nbsp;<b>Strategy</b></span>
+          <span class="status-pill"><span class="dot"></span><span class="k">Member since</span>&nbsp;<b>2026</b></span>
+        </div>
+
         <div class="member-chips reveal" data-delay="3">
-          <span class="chip"><span class="chip-dot"></span>Member since&nbsp;<b>2026</b></span>
-          <span class="chip"><span class="chip-dot"></span>Tier:&nbsp;<b>Partner</b></span>
-          <span class="chip"><span class="chip-dot"></span>Status:&nbsp;<b>Active</b></span>
           <!-- Instagram field — saves to localStorage (celvix_instagram) -->
           <span class="ig-chip" title="Your main sales channel">
             <span class="ig-ico" aria-hidden="true">&#9673;</span>
@@ -70,7 +79,128 @@
             </a>
           </span>
         </div>
-        <div class="chips-caption reveal" data-delay="3">Instagram is your main sales channel — add your handle so it's one tap from your dashboard.</div>
+        <div class="chips-caption reveal" data-delay="3">Instagram is your main sales channel — add your handle so it's one tap from your workspace.</div>
+      </div>
+    </section>
+
+    <!-- B2) INSIDE YOUR WORKSPACE — quick-access grid -->
+    <section class="member-section" id="quick-access">
+      <div class="container">
+        <div class="ws-block-head reveal">
+          <span class="eyebrow">Inside your workspace</span>
+          <h2>Everything, one click away.</h2>
+        </div>
+        <div class="quick-grid">
+          <a class="quick-card reveal" href="engagement.html">
+            <div class="quick-ico" aria-hidden="true">&#9678;</div>
+            <h3>Engagement status</h3>
+            <p>Live scope, current phase, and what's being built for you right now.</p>
+            <span class="quick-arrow">Open <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <a class="quick-card reveal" data-delay="1" href="#resources">
+            <div class="quick-ico" aria-hidden="true">&#128218;</div>
+            <h3>Private resources</h3>
+            <p>Frameworks, scripts, and market intelligence built for your engagement.</p>
+            <span class="quick-arrow">Open <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <a class="quick-card reveal" data-delay="2" href="engagement.html#updates">
+            <div class="quick-ico" aria-hidden="true">&#128202;</div>
+            <h3>Reporting</h3>
+            <p>Growth reviews, deliverable status, and the latest notes from your team.</p>
+            <span class="quick-arrow">Open <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <a class="quick-card reveal" data-delay="3" href="account.html#support">
+            <div class="quick-ico" aria-hidden="true">&#9993;</div>
+            <h3>Direct support</h3>
+            <p>A direct line to your strategist, with a 24-hour response target.</p>
+            <span class="quick-arrow">Open <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- B3) CONTROL CENTRE / OPERATING LAYER -->
+    <section class="member-section" id="control-centre">
+      <div class="container">
+        <div class="control-centre reveal">
+          <div class="cc-head">
+            <div>
+              <span class="eyebrow">The operating layer</span>
+              <h2>One control centre for your growth.</h2>
+            </div>
+            <span class="cc-live"><span class="live-dot"></span>Live workspace</span>
+          </div>
+
+          <div class="cc-grid">
+            <!-- Audience Growth -->
+            <div class="cc-tile">
+              <div class="cc-tile-label">Audience Growth <span class="cc-tag">Trending up</span></div>
+              <div class="cc-bars" aria-hidden="true">
+                <div class="cc-bar"><i style="--v:.32"></i></div>
+                <div class="cc-bar"><i style="--v:.44"></i></div>
+                <div class="cc-bar"><i style="--v:.40"></i></div>
+                <div class="cc-bar"><i style="--v:.58"></i></div>
+                <div class="cc-bar"><i style="--v:.66"></i></div>
+                <div class="cc-bar"><i style="--v:.78"></i></div>
+                <div class="cc-bar tall"><i style="--v:.94"></i></div>
+              </div>
+              <div class="cc-bars-x" aria-hidden="true">
+                <span>Wk1</span><span>Wk2</span><span>Wk3</span><span>Wk4</span><span>Wk5</span><span>Wk6</span><span>Wk7</span>
+              </div>
+            </div>
+
+            <!-- Performance Insights -->
+            <div class="cc-tile">
+              <div class="cc-tile-label">Performance Insights <span class="cc-tag">Last 30 days</span></div>
+              <div class="cc-skel">
+                <div class="cc-skel-row"><span class="m-label">Reach</span><div class="cc-skel-track"><i style="--w:82%"></i></div><span class="m-val">+82%</span></div>
+                <div class="cc-skel-row"><span class="m-label">Leads</span><div class="cc-skel-track"><i style="--w:64%"></i></div><span class="m-val">+64%</span></div>
+                <div class="cc-skel-row"><span class="m-label">Bookings</span><div class="cc-skel-track"><i style="--w:47%"></i></div><span class="m-val">+47%</span></div>
+                <div class="cc-skel-row"><span class="m-label">Saves</span><div class="cc-skel-track"><i style="--w:71%"></i></div><span class="m-val">+71%</span></div>
+              </div>
+            </div>
+
+            <!-- Content Pipeline -->
+            <div class="cc-tile span-2">
+              <div class="cc-tile-label">Content Pipeline <span class="cc-tag">This cycle</span></div>
+              <div class="cc-pipe">
+                <div class="cc-node done"><span class="nd"></span><span class="nd-label">Draft</span></div>
+                <div class="cc-seg filled"></div>
+                <div class="cc-node done"><span class="nd"></span><span class="nd-label">Review</span></div>
+                <div class="cc-seg filled"></div>
+                <div class="cc-node current"><span class="nd"></span><span class="nd-label">Scheduled</span></div>
+                <div class="cc-seg"></div>
+                <div class="cc-node"><span class="nd"></span><span class="nd-label">Live</span></div>
+              </div>
+            </div>
+
+            <!-- Distribution Channels -->
+            <div class="cc-tile">
+              <div class="cc-tile-label">Distribution Channels</div>
+              <div class="cc-channels">
+                <span class="cc-chip"><span class="ch-dot"></span>Instagram</span>
+                <span class="cc-chip"><span class="ch-dot"></span>TikTok</span>
+                <span class="cc-chip"><span class="ch-dot"></span>YouTube</span>
+                <span class="cc-chip"><span class="ch-dot"></span>LinkedIn</span>
+                <span class="cc-chip"><span class="ch-dot"></span>Facebook</span>
+              </div>
+            </div>
+
+            <!-- Support Access -->
+            <div class="cc-tile">
+              <div class="cc-tile-label">Support Access</div>
+              <div class="cc-support">
+                <div class="cc-support-ico" aria-hidden="true">&#9993;</div>
+                <div>
+                  <div class="cc-support-val">Response target &middot; 24h</div>
+                  <div class="cc-support-sub">Direct line to your strategist</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cc-caption">Illustrative workspace &middot; provisioned per engagement</div>
+        </div>
       </div>
     </section>
 
@@ -80,7 +210,7 @@
         <div class="onboarding reveal" id="onboarding">
           <div class="onb-head">
             <div>
-              <span class="eyebrow">Getting Started</span>
+              <span class="eyebrow">Onboarding</span>
               <h2>Build your partner profile</h2>
               <p>A few quick questions so our team can prepare a strategy that fits your business. Your progress saves automatically.</p>
             </div>
@@ -105,8 +235,8 @@
       <div class="container">
         <div class="block-head reveal" style="margin-bottom:40px;">
           <span class="eyebrow">The library</span>
-          <h2 class="section-title">Resources built to move listings.</h2>
-          <p class="section-lead">Frameworks, scripts, and market intelligence — the same playbook we run with every partner. Each guide is a full, practical read.</p>
+          <h2 class="section-title">Resources for your engagement.</h2>
+          <p class="section-lead">Frameworks, scripts, and market intelligence — the same playbook we run with every partner. Each guide is a full, practical read, built for real estate growth.</p>
         </div>
 
         <div class="resource-grid">
@@ -232,8 +362,8 @@
   <footer class="member-footer">
     <div class="container">
       <a href="members.html" class="logo">CELVIX<span>•</span>PARTNERS</a>
-      <span class="mf-meta">Managed by VREH DIGITAL LLC · United States</span>
-      <span class="mf-whop"><span class="lock">&#128274;</span> Payments managed via Whop.</span>
+      <span class="mf-meta">© 2026 Celvix Partners · Private client workspace — Operated by VREH DIGITAL LLC</span>
+      <span class="mf-whop"><span class="lock">&#128274;</span> Billing via Whop.</span>
     </div>
   </footer>
 
