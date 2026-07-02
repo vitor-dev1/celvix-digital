@@ -24,7 +24,7 @@
     };
     requestAnimationFrame(loop);
 
-    const hoverables = 'a, button, .svc-row, input, select, textarea, .stat, .step, .tcard, .team-card, .method-card';
+    const hoverables = 'a, button, .svc-row, input, select, textarea, .stat, .step, .tcard, .team-card, .method-card, .engage-col, .company-cell';
     document.querySelectorAll(hoverables).forEach((el) => {
       el.addEventListener('mouseenter', () => ring.classList.add('is-hover'));
       el.addEventListener('mouseleave', () => ring.classList.remove('is-hover'));
