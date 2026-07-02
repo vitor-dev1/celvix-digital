@@ -188,6 +188,91 @@ h1, h2, .about-claim, .svc-name { font-family: var(--font-serif); letter-spacing
 .float-card .l { color: var(--muted-2); font-size: .78rem; }
 @media (max-width: 880px){ .hero-grid { grid-template-columns: 1fr; } .hero-visual { display:none; } }
 
+/* ---------- Hero framework box (The Celvix Method) ---------- */
+.method-hero {
+  position: relative;
+  align-self: center;
+  padding: 30px 30px 26px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  background:
+    radial-gradient(520px 240px at 100% 0%, var(--gold-tint), transparent 70%),
+    rgba(18,15,26,.72);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 40px 80px -34px rgba(0,0,0,.8);
+}
+.method-hero .mh-top {
+  display: flex; align-items: center; justify-content: space-between; gap: 14px;
+  padding-bottom: 20px; margin-bottom: 6px; border-bottom: 1px solid var(--line);
+}
+.method-hero .mh-label,
+.method-hero .mh-count {
+  font-family: var(--font-display); font-weight: 600;
+  font-size: .72rem; letter-spacing: .2em; text-transform: uppercase;
+}
+.method-hero .mh-label { color: var(--gold-soft); display: inline-flex; align-items: center; gap: .4rem; }
+.method-hero .mh-label .mh-bullet { color: var(--gold); }
+.method-hero .mh-count { color: var(--muted-2); }
+.method-hero .mh-row {
+  display: grid; grid-template-columns: 40px 1fr auto; align-items: center; gap: 14px;
+  padding: 16px 12px; margin: 0 -12px; border-radius: var(--radius-sm);
+  border-top: 1px solid var(--line);
+  transition: background .3s var(--ease), padding .3s var(--ease);
+}
+.method-hero .mh-row:first-of-type { border-top: 0; }
+.method-hero .mh-num { font-family: var(--font-display); font-weight: 700; font-size: 1rem; color: var(--gold); }
+.method-hero .mh-name { font-family: var(--font-serif); font-size: 1.12rem; color: var(--text); letter-spacing: -.01em; }
+.method-hero .mh-arrow { color: var(--muted-2); opacity: 0; transform: translateX(-6px); transition: opacity .3s var(--ease), transform .3s var(--ease); }
+.method-hero .mh-row:hover { background: var(--gold-tint); padding-left: 18px; }
+.method-hero .mh-row:hover .mh-name { color: var(--gold-soft); }
+.method-hero .mh-row:hover .mh-arrow { color: var(--gold); opacity: 1; transform: none; }
+.method-hero .mh-explore {
+  display: inline-flex; align-items: center; gap: .5rem; margin-top: 22px;
+  font-family: var(--font-display); font-weight: 600; font-size: .8rem;
+  letter-spacing: .18em; text-transform: uppercase; color: var(--gold);
+  transition: color .25s var(--ease), gap .25s var(--ease);
+}
+.method-hero .mh-explore:hover { color: var(--gold-soft); gap: .85rem; }
+.method-hero .float-card { left: auto; right: -22px; bottom: auto; top: -26px; }
+@media (max-width: 880px){
+  .method-hero { margin-top: 40px; }
+  .method-hero .float-card { display: none; }
+}
+@media (prefers-reduced-motion: reduce){
+  .method-hero .mh-row, .method-hero .mh-arrow, .method-hero .mh-explore { transition: none; }
+}
+
+/* ---------- Method section (dedicated) ---------- */
+.method-grid { display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; }
+.method-card {
+  flex: 1 1 300px; max-width: 372px;
+  padding: 34px 30px; border: 1px solid var(--line); border-radius: var(--radius);
+  background: var(--bg-card); position: relative; overflow: hidden;
+  transition: border-color .3s var(--ease), transform .3s var(--ease), box-shadow .3s var(--ease), background .3s var(--ease);
+}
+.method-card::before {
+  content: ""; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  border-radius: var(--radius) var(--radius) 0 0;
+  background: linear-gradient(90deg, var(--gold), var(--gold-soft));
+  opacity: 0; transition: opacity .3s var(--ease);
+}
+.method-card:hover::before { opacity: 1; }
+.method-card:hover { border-color: var(--gold); transform: translateY(-6px); background: var(--surface); box-shadow: 0 30px 60px -30px var(--gold-glow); }
+.method-card .mc-head { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-bottom: 18px; }
+.method-card .mc-num { font-family: var(--font-display); font-weight: 700; font-size: 3rem; color: var(--gold-tint); -webkit-text-stroke: 1px var(--gold); line-height: 1; }
+.method-card .mc-ic { width: 48px; height: 48px; border-radius: 14px; background: var(--gold-tint); color: var(--gold); display: grid; place-items: center; font-size: 1.3rem; flex: none; }
+.method-card .mc-name { font-family: var(--font-serif); font-size: 1.5rem; margin-bottom: 12px; }
+.method-card .mc-desc { color: var(--muted); font-size: .98rem; }
+.method-foot { text-align: center; margin-top: 48px; }
+.method-foot a {
+  display: inline-flex; align-items: center; gap: .5rem;
+  font-family: var(--font-display); font-weight: 600; font-size: 1.02rem; color: var(--gold);
+  transition: color .25s var(--ease), gap .25s var(--ease);
+}
+.method-foot a:hover { color: var(--gold-soft); gap: .85rem; }
+@media (max-width: 620px){ .method-card { flex-basis: 100%; max-width: 100%; } }
+
 /* ---------- Marquee ---------- */
 .marquee { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 26px 0; overflow: hidden; background: var(--bg-elev); }
 .marquee-track { display: flex; gap: 0; width: max-content; animation: marquee 28s linear infinite; }
